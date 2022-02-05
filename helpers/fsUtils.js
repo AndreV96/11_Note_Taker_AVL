@@ -9,7 +9,7 @@ const readFile = (res) => {
     }
   })
 }
-const readAndAppend = (newNote) => {
+const writeFile = (newNote) => {
   fs.readFile('./db/db.json', 'utf8', (err, data) => {
     if (err) {
       console.error(err);
@@ -21,5 +21,17 @@ const readAndAppend = (newNote) => {
     }
   })
 }
-
-module.exports = {readFile, readAndAppend};
+const deleteFile = (noteId) =>{
+  fs.readFile('./db/db.json', 'utf8', (err, data) => {
+    if (err) {
+      console.error(err)
+    } else {
+      const noteDB = JSON.parse(data)
+      const idMatchIndex = noteDB.findIndex(e => noteId === e.id)
+      noteDB.splice(idMatchIndex, 1)
+      fs.writeFile('./db/db.json', JSON.stringify(noteDB), (err) => 
+      err ? console.error(err) : console.info(`\nNote deleted from database`))
+    }
+  });
+}
+module.exports = {readFile, writeFile, deleteFile};
