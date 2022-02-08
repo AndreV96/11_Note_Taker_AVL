@@ -7,7 +7,7 @@ The purpose of this project is to create an application where the user will be a
 
 Link to deployed applitaction: https://morning-lowlands-78728.herokuapp.com/
 
-GitHub Repo: https://github.com/AndreV96/12_Employee_Tracker_AVL.git
+GitHub Repo: https://github.com/AndreV96/11_Note_Taker_AVL.git
 
 ## Table of Contents 
 
