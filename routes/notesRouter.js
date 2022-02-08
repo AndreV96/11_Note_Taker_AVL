@@ -1,4 +1,3 @@
-// Add functionality to the routes below
 
 const notes = require('express').Router();
 const uuid = require('../helpers/uuid');
