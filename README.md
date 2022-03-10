@@ -9,6 +9,10 @@ Link to deployed applitaction: https://morning-lowlands-78728.herokuapp.com/
 
 GitHub Repo: https://github.com/AndreV96/11_Note_Taker_AVL.git
 
+The following image shows the web application's appearance and functionality:
+
+![Deployed Webpage](img/Note_Taker.png)
+
 ## Table of Contents 
 
 - [Installation](#installation)
